@@ -1,0 +1,14 @@
+{
+  "name": "name-challenge-release",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "score": "bun run scripts/score.ts",
+    "score:small": "bun run scripts/score.ts --dataset small --suite tests/public_small.json",
+    "score:large": "bun run scripts/score.ts --dataset large --suite tests/public_large.json"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "name": "public_large",
+  "dataset": "large",
+  "visibility": "public",
+  "seed": 843737,
+  "cases": [
+    {
+      "id": "public_large-001",
+      "dataset": "large",
+      "query": "Colin Watkins",
+      "expectedIds": [
+        "349",
+        "391",
+        "496",
+        "631",
+        "687",
+        "702",
+        "764",
+        "768",
+        "908",
+        "911"
+      ],
+      "falsePositiveIds": [
+        "107",
+        "130",
+        "192",
+        "228",
+        "335",
+        "451",
+        "611",
+        "619"
+      ],
+      "tags": [
+        "entity_match",
+        "canonical"
+      ],
+      "notes": "public large entity query; canonical=Colin Watkins"
+    },
+    {
+      "id": "public_large-002",
+      "dataset": "large",
+      "query": "Long Mira",
+      "expectedIds": [
+        "127",
+        "282",
+        "299",
+        "438",
+        "454",
+        "527",
+        "535",
+        "636",
+        "738",
+        "833"
+      ],
+      "falsePositiveIds": [
+        "36",
+        "182",
+        "246",
+        "343",
+        "598",
+        "623",
+        "675",
+        "804"
+      ],
+      "tags": [
+        "entity_match",
+        "transpose"
+      ],
+      "notes": "public large entity query; canonical=Mira Long"
+    },
+    {
+      "id": "public_large-003",
+      "dataset": "large",
+      "query": "C. Snider",
+      "expectedIds": [
+        "76",
+        "136",
+        "162",
+        "212",
+        "270",
+        "283",
+        "410",
+        "417",
+        "471",
+        "855"
+      ],
+      "falsePositiveIds": [
+        "80",
+        "114",
+        "309",
+        "389",
+        "418",
+        "602",
+        "649",
+        "714"
+      ],
+      "tags": [
+        "entity_match",
+        "initial"
+      ],
+      "notes": "public large entity query; canonical=Cyrus Snider"
+    },
+    {
+      "id": "public_large-004",
+      "dataset": "large",
+      "query": "Felix Ruth Brookes",
+      "expectedIds": [
+        "28",
+        "56",
+        "133",
+        "272",
+        "276",
+        "334",
+        "609",
+        "610",
+        "693",
+        "695"
+      ],
+      "falsePositiveIds": [
+        "184",
+        "325",
+        "333",
+        "394",
+        "398",
+        "581",
+        "792",
+        "856"
+      ],
+      "tags": [
+        "entity_match",
+        "suffix_omit"
+      ],
+      "notes": "public large entity query; canonical=Felix Ruth Brookes"
+    },
+    {
+      "id": "public_large-005",
+      "dataset": "large",
+      "query": "Isaac Faye Clark Jr",
+      "expectedIds": [
+        "14",
+        "111",
+        "258",
+        "285",
+        "301",
+        "361",
+        "513",
+        "656",
+        "806",
+        "807"
+      ],
+      "falsePositiveIds": [
+        "31",
+        "317",
+        "340",
+        "421",
+        "453",
+        "662",
+        "707",
+        "796"
+      ],
+      "tags": [
+        "entity_match",
+        "canonical"
+      ],
+      "notes": "public large entity query; canonical=Isaac Faye Clark Jr"
+    },
+    {
+      "id": "public_large-006",
+      "dataset": "large",
+      "query": "Warde Bennett",
+      "expectedIds": [
+        "67",
+        "103",
+        "151",
+        "464",
+        "482",
+        "517",
+        "606",
+        "669",
+        "827",
+        "852"
+      ],
+      "falsePositiveIds": [
+        "33",
+        "44",
+        "193",
+        "203",
+        "509",
+        "554",
+        "704",
+        "717"
+      ],
+      "tags": [
+        "entity_match",
+        "transpose"
+      ],
+      "notes": "public large entity query; canonical=Bennett Warde"
+    },
+    {
+      "id": "public_large-007",
+      "dataset": "large",
+      "query": "K. Sullivan",
+      "expectedIds": [
+        "119",
+        "294",
+        "360",
+        "542",
+        "651",
+        "760",
+        "886",
+        "888",
+        "910",
+        "933"
+      ],
+      "falsePositiveIds": [
+        "106",
+        "243",
+        "396",
+        "427",
+        "550",
+        "643",
+        "653",
+        "700"
+      ],
+      "tags": [
+        "entity_match",
+        "initial"
+      ],
+      "notes": "public large entity query; canonical=Keaton Elle Sullivan Sr"
+    },
+    {
+      "id": "public_large-008",
+      "dataset": "large",
+      "query": "Caleb Dean Garcia",
+      "expectedIds": [
+        "191",
+        "237",
+        "409",
+        "432",
+        "476",
+        "490",
+        "530",
+        "563",
+        "624",
+        "980"
+      ],
+      "falsePositiveIds": [
+        "46",
+        "83",
+        "145",
+        "172",
+        "310",
+        "332",
+        "353",
+        "384"
+      ],
+      "tags": [
+        "entity_match",
+        "suffix_omit"
+      ],
+      "notes": "public large entity query; canonical=Caleb Dean Garcia"
+    },
+    {
+      "id": "public_large-009",
+      "dataset": "large",
+      "query": "Helena Parkar",
+      "expectedIds": [
+        "120",
+        "286",
+        "435",
+        "484",
+        "492",
+        "505",
+        "660",
+        "696",
+        "763",
+        "802"
+      ],
+      "falsePositiveIds": [
+        "61",
+        "137",
+        "213",
+        "230",
+        "250",
+        "267",
+        "313",
+        "733"
+      ],
+      "tags": [
+        "entity_match",
+        "canonical"
+      ],
+      "notes": "public large entity query; canonical=Helena Parkar"
+    },
+    {
+      "id": "public_large-010",
+      "dataset": "large",
+      "query": "Bayley Jolie",
+      "expectedIds": [
+        "381",
+        "473",
+        "512",
+        "652",
+        "654",
+        "668",
+        "795",
+        "881",
+        "882",
+        "934"
+      ],
+      "falsePositiveIds": [
+        "141",
+        "178",
+        "318",
+        "326",
+        "461",
+        "582",
+        "793",
+        "862"
+      ],
+      "tags": [
+        "entity_match",
+        "transpose"
+      ],
+      "notes": "public large entity query; canonical=Jolie Bayley II"
+    },
+    {
+      "id": "public_large-011",
+      "dataset": "large",
+      "query": "D. Pryce",
+      "expectedIds": [
+        "7",
+        "96",
+        "97",
+        "204",
+        "306",
+        "429",
+        "523",
+        "612",
+        "709",
+        "957"
+      ],
+      "falsePositiveIds": [
+        "159",
+        "245",
+        "288",
+        "570",
+        "751",
+        "837",
+        "900",
+        "901"
+      ],
+      "tags": [
+        "entity_match",
+        "initial"
+      ],
+      "notes": "public large entity query; canonical=Derek Pryce"
+    },
+    {
+      "id": "public_large-012",
+      "dataset": "large",
+      "query": "Marek Veltrane",
+      "expectedIds": [],
+      "falsePositiveIds": [
+        "210",
+        "867",
+        "669",
+        "548",
+        "383",
+        "446",
+        "542",
+        "328",
+        "84",
+        "230",
+        "808",
+        "938",
+        "643",
+        "266",
+        "121",
+        "997",
+        "407",
+        "290",
+        "447",
+        "77",
+        "931",
+        "213",
+        "813",
+        "316",
+        "511",
+        "323",
+        "319",
+        "188",
+        "267",
+        "636",
+        "888",
+        "793",
+        "384",
+        "770",
+        "336",
+        "756",
+        "181",
+        "217",
+        "750",
+        "823"
+      ],
+      "tags": [
+        "no_match",
+        "overmatch_guard"
+      ],
+      "notes": "public large no-match guard"
+    },
+    {
+      "id": "public_large-013",
+      "dataset": "large",
+      "query": "Qorina Quorrel",
+      "expectedIds": [],
+      "falsePositiveIds": [
+        "22",
+        "999",
+        "293",
+        "456",
+        "662",
+        "108",
+        "314",
+        "489",
+        "13",
+        "326",
+        "707",
+        "485",
+        "619",
+        "71",
+        "749",
+        "631",
+        "682",
+        "114",
+        "791",
+        "83",
+        "897",
+        "45",
+        "937",
+        "313",
+        "154",
+        "575",
+        "340",
+        "417",
+        "20",
+        "112",
+        "425",
+        "110",
+        "977",
+        "616",
+        "726",
+        "169",
+        "483",
+        "601",
+        "414",
+        "117"
+      ],
+      "tags": [
+        "no_match",
+        "overmatch_guard"
+      ],
+      "notes": "public large no-match guard"
+    },
+    {
+      "id": "public_large-014",
+      "dataset": "large",
+      "query": "Qorina Mersant",
+      "expectedIds": [],
+      "falsePositiveIds": [
+        "81",
+        "430",
+        "976",
+        "939",
+        "828",
+        "873",
+        "3",
+        "498",
+        "686",
+        "212",
+        "571",
+        "272",
+        "608",
+        "722",
+        "177",
+        "840",
+        "161",
+        "163",
+        "146",
+        "306",
+        "358",
+        "252",
+        "707",
+        "182",
+        "48",
+        "741",
+        "555",
+        "619",
+        "755",
+        "450",
+        "383",
+        "584",
+        "309",
+        "324",
+        "700",
+        "716",
+        "339",
+        "814",
+        "123",
+        "356"
+      ],
+      "tags": [
+        "no_match",
+        "overmatch_guard"
+      ],
+      "notes": "public large no-match guard"
+    },
+    {
+      "id": "public_large-015",
+      "dataset": "large",
+      "query": "Marek Branswicke",
+      "expectedIds": [],
+      "falsePositiveIds": [
+        "183",
+        "967",
+        "384",
+        "403",
+        "525",
+        "91",
+        "490",
+        "250",
+        "165",
+        "303",
+        "387",
+        "514",
+        "982",
+        "189",
+        "843",
+        "37",
+        "327",
+        "723",
+        "207",
+        "528",
+        "428",
+        "859",
+        "390",
+        "284",
+        "60",
+        "908",
+        "662",
+        "936",
+        "500",
+        "385",
+        "293",
+        "358",
+        "766",
+        "734",
+        "697",
+        "1000",
+        "280",
+        "611",
+        "703",
+        "498"
+      ],
+      "tags": [
+        "no_match",
+        "overmatch_guard"
+      ],
+      "notes": "public large no-match guard"
+    },
+    {
+      "id": "public_large-016",
+      "dataset": "large",
+      "query": "Talvi Darnell",
+      "expectedIds": [],
+      "falsePositiveIds": [
+        "535",
+        "907",
+        "497",
+        "1000",
+        "423",
+        "793",
+        "918",
+        "340",
+        "564",
+        "407",
+        "259",
+        "515",
+        "730",
+        "814",
+        "349",
+        "146",
+        "738",
+        "352",
+        "394",
+        "751",
+        "883",
+        "277",
+        "471",
+        "170",
+        "957",
+        "65",
+        "523",
+        "129",
+        "518",
+        "350",
+        "490",
+        "919",
+        "618",
+        "426",
+        "178",
+        "607",
+        "792",
+        "669",
+        "590",
+        "459"
+      ],
+      "tags": [
+        "no_match",
+        "overmatch_guard"
+      ],
+      "notes": "public large no-match guard"
+    },
+    {
+      "id": "public_large-017",
+      "dataset": "large",
+      "query": "A. Moen",
+      "expectedIds": [
+        "1001"
+      ],
+      "falsePositiveIds": [
+        "1100",
+        "1686",
+        "1998",
+        "2603",
+        "2977",
+        "3425",
+        "3839",
+        "3849",
+        "4033",
+        "4473"
+      ],
+      "tags": [
+        "filler",
+        "singleton",
+        "large_noise"
+      ],
+      "notes": "Large dataset singleton recall under heavy distractor load; anchor=A. Moen"
+    },
+    {
+      "id": "public_large-018",
+      "dataset": "large",
+      "query": "Marlne Lowe",
+      "expectedIds": [
+        "1002"
+      ],
+      "falsePositiveIds": [
+        "1654",
+        "1703",
+        "2517",
+        "2549",
+        "2833",
+        "3116",
+        "3908",
+        "4472",
+        "5283",
+        "5414"
+      ],
+      "tags": [
+        "filler",
+        "singleton",
+        "large_noise"
+      ],
+      "notes": "Large dataset singleton recall under heavy distractor load; anchor=Marlene Lowe"
+    },
+    {
+      "id": "public_large-019",
+      "dataset": "large",
+      "query": "Damon Hane",
+      "expectedIds": [
+        "1003"
+      ],
+      "falsePositiveIds": [
+        "1212",
+        "2615",
+        "2688",
+        "2770",
+        "2805",
+        "3073",
+        "3080",
+        "4225",
+        "5882",
+        "6431"
+      ],
+      "tags": [
+        "filler",
+        "singleton",
+        "large_noise"
+      ],
+      "notes": "Large dataset singleton recall under heavy distractor load; anchor=Damon Hane"
+    },
+    {
+      "id": "public_large-020",
+      "dataset": "large",
+      "query": "Rosina Botsford",
+      "expectedIds": [
+        "1004"
+      ],
+      "falsePositiveIds": [
+        "1528",
+        "2111",
+        "2489",
+        "2540",
+        "2637",
+        "3109",
+        "3264",
+        "4075",
+        "4706",
+        "5156"
+      ],
+      "tags": [
+        "filler",
+        "singleton",
+        "large_noise"
+      ],
+      "notes": "Large dataset singleton recall under heavy distractor load; anchor=Rosina Botsford"
+    }
+  ]
+}
