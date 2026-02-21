@@ -1,12 +1,18 @@
 # FindWhatIsLost - NameMatching
 
-Implement one function:
+Implement functions:
 
 ```ts
+async function setup(datasetPath: string): Promise<void>;
 async function search(query: string): Promise<string[]>;
+async function cleanup(): Promise<void>;
 ```
 
-Given a `query`, return matching record IDs from the selected dataset.
+**`setup(datasetPath)`** is called once before any `search()` calls. It receives the absolute path to the dataset CSV. Use it to load, parse, and index the data. Time spent in `setup` is reported separately and **does not** count toward QPS. Optional.
+
+**`search(query)`** — given a `query`, return matching record IDs from the selected dataset.
+
+**`cleanup()`** is called once after all `search()` calls complete. Use it to tear down resources (close DB connections, remove temp files, etc.). Optional.
 
 You can use any type of library / helpers / infrastructure you want.
 The provided datasets are small for local evaluation, but the real production problem operates at 100M+ rows.

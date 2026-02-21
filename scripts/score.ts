@@ -1,5 +1,5 @@
 import { resolve } from "node:path";
-import { search } from "../submission/search";
+import { setup, search, cleanup } from "../submission/search";
 
 interface RecordRow {
   id: string;
@@ -280,6 +280,12 @@ async function main(): Promise<void> {
   const rows = await loadDataset(datasetPath);
   const byId = new Map(rows.map((row) => [row.id, row] as const));
 
+  const setupStart = performance.now();
+  if (typeof setup === "function") {
+    await setup(datasetPath);
+  }
+  const setupMs = performance.now() - setupStart;
+
   console.log(color.dim("=".repeat(88)));
   console.log(color.bold("Name Challenge Scorer"));
   printMetric("Dataset", args.dataset, color.cyan);
@@ -360,6 +366,12 @@ async function main(): Promise<void> {
     }
   }
 
+  const cleanupStart = performance.now();
+  if (typeof cleanup === "function") {
+    await cleanup();
+  }
+  const cleanupMs = performance.now() - cleanupStart;
+
   const recall = expectedTotal === 0 ? 100 : (expectedHits / expectedTotal) * 100;
   const precision = returnedTotal === 0 ? 0 : (expectedHits / returnedTotal) * 100;
   const f1 = (recall + precision) === 0 ? 0 : (2 * recall * precision) / (recall + precision);
@@ -402,10 +414,12 @@ async function main(): Promise<void> {
   printMetric("Score", score.toFixed(2), scorePainter(score));
 
   console.log(`\n${color.bold("Timing")}`);
+  printMetric("Setup", `${setupMs.toFixed(1)}ms`);
   printMetric("Total", `${totalMs.toFixed(1)}ms`);
   printMetric("Average/query", `${avgMs.toFixed(1)}ms`);
   printMetric("P95/query", `${p95Ms.toFixed(1)}ms`);
   printMetric("Approx QPS", qps.toFixed(2));
+  printMetric("Cleanup", `${cleanupMs.toFixed(1)}ms`);
   console.log(color.dim("=".repeat(88)));
 }
 
